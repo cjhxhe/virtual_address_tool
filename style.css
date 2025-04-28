@@ -1,0 +1,110 @@
+@media (prefers-color-scheme: dark) {
+  body { background: #333; color: white; }
+}
+
+@media (prefers-color-scheme: light) {
+  body { background: #ddd; color: black; }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.input-container label {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.output-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  resize: none;
+}
+#text1 {
+  height: 200px;
+}
+#text_filter {
+  height: 120px;
+}
+button {
+  width: 150px;
+  position: relative;
+}
+.tooltip {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.alert {
+  color: red;
+  margin-top: 10px;
+}
+
+#dropVadZone, #dropProcessZone {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+#fileContent {
+  margin-top: 20px;
+  width: 80%;
+  height: 200px;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.hideContent{
+  display: none;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+#vadFileInput, #processFileInput {
+  display: none;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}

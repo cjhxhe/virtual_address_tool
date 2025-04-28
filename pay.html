@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Viewer</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #fff;
+        overflow: hidden; /* Prevent scrollbars */
+      }
+      .title-bar {
+        height: 30px;
+        background: #333;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Right-aligns the close button */
+        padding: 0 10px;
+      }
+      .title-bar .close {
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        padding: 10px;
+        overflow: hidden; /* Prevent scrollbars in the image container */
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Maintains image aspect ratio */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="close" onclick="window.close()">X</div>
+    </div>
+    <div class="image-container">
+      <!-- <img src="alipay.png" alt="Image" /> -->
+      <img src="" alt="Image" />
+    </div>
+  </body>
+</html>

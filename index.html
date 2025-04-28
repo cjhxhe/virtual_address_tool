@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>虚拟地址库匹配工具</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="logic.js" defer></script>
+    <script src="renderer.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>虚拟地址库匹配工具</h1>
+    </div>
+
+    <div class="container">
+      <h3>标签库文件</h3>
+      <div id="dropVadZone">虚拟地址库文件丢到这里</div>
+      <input type="file" id="vadFileInput" accept=".xlsx" />
+      <div id="fileContent1" class="hideContent"></div>
+      <!--风险地址库-->
+      <div id="fileContent2" class="hideContent"></div>
+      <!--风险人员库-->
+      <div id="fileContent3" class="hideContent"></div>
+      <!--生僻字库-->
+      <div id="fileContent4" class="hideContent"></div>
+      <!--行业库-->
+
+      <h3>待匹配文件</h3>
+      <div id="dropProcessZone">待匹配文件丢到这里</div>
+      <input type="file" id="processFileInput" accept=".xlsx" />
+
+      <div>
+        <input type="button" id="submit" value="提交" />
+      </div>
+
+      <span id="click-count" class="hideContent">0</span>
+    </div>
+  </body>
+</html>
